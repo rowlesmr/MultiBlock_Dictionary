@@ -713,6 +713,46 @@ save_diffrn_source.radiation_id
 
 save_
 
+save_REFLN
+
+    _definition.id                REFLN
+    _definition.scope             Category
+    _definition.class             Loop
+    _definition.update            2026-05-19
+    _description.text
+;
+    The category of data items used to describe the reflection data
+    used in the refinement of a crystallographic structure model.
+;
+    _name.category_id             DIFFRACTION
+    _name.object_id               REFLN
+
+    loop_
+      _category_key.name
+         '_refln.id'
+         '_refln.structure_id'
+
+save_
+
+save_refln.structure_id
+
+    _definition.id                '_refln.structure_id'
+    _definition.update            2026-05-19
+    _description.text
+;
+    A code identifying the crystallographic structure associated with this
+    reflection.
+;
+    _name.category_id             refln
+    _name.object_id               structure_id
+    _name.linked_item_id          '_structure.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
 save_EXPTL_CRYSTAL
 
     _definition.id                EXPTL_CRYSTAL
