@@ -11,7 +11,7 @@ data_MULTIBLOCK_DIC
     _dictionary.title             MULTIBLOCK_DIC
     _dictionary.class             Instance
     _dictionary.version           1.1.0
-    _dictionary.date              2026-05-19
+    _dictionary.date              2026-06-07
     _dictionary.uri
 ;\
 https://raw.githubusercontent.com/COMCIFS/cif_multiblock/main/\
@@ -1396,6 +1396,24 @@ save_structure.space_group_id
 
 save_
 
+save_structure.superspace_group_id
+
+    _definition.id                '_structure.superspace_group_id'
+    _definition.update            2026-06-07
+    _description.text
+;
+    A code which identifies the superspace group associated with the structure.
+;
+    _name.category_id             structure
+    _name.object_id               space_group_id
+    _name.linked_item_id          '_superspace_group.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
 save_ATOM_SITE
 
     _definition.id                ATOM_SITE
@@ -1599,5 +1617,7 @@ save_
 
        Updated REFLN to include _refln.structure_id (linked to _structure.id)
        as a key data name.
+
+       Added linked, non-key _structure.superspace_group_id for CIF_MS.
 ;
 
