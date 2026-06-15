@@ -263,20 +263,20 @@ save_ATOM_SITES_CARTN_TRANSFORM
 ;
     _name.category_id             ATOM_SITES
     _name.object_id               ATOM_SITES_CARTN_TRANSFORM
-    _category_key.name            '_atom_sites_cartn_transform.structure_id'
+    _category_key.name            '_atom_sites_Cartn_transform.structure_id'
 
 save_
 
 save_atom_sites_cartn_transform.structure_id
 
-    _definition.id                '_atom_sites_cartn_transform.structure_id'
+    _definition.id                '_atom_sites_Cartn_transform.structure_id'
     _definition.update            2026-06-15
     _description.text
 ;
     A code identifying the crystallographic structure associated with this atom
     sites Cartesian coordinate transform.
 ;
-    _name.category_id             atom_sites_cartn_transform
+    _name.category_id             atom_sites_Cartn_transform
     _name.object_id               structure_id
     _name.linked_item_id          '_structure.id'
     _type.purpose                 Link
